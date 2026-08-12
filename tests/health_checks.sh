@@ -14,12 +14,12 @@
 
 bats_require_minimum_version 1.8.0
 
-run curl -sfI https://${PROJNAME}.ddev.site:9201
+run curl -sfI https://elasticsearch.ddev.site
 assert_success
 assert_output --partial "HTTP/2 200"
 assert_output --partial "x-elastic-product: Elasticsearch"
 
-run curl -sf https://${PROJNAME}.ddev.site:9201
+run curl -sf https://elasticsearch.ddev.site
 assert_success
 assert_output --partial "${PROJNAME}-elasticsearch"
 assert_output --partial "${ELASTICSEARCH_VERSION}"
