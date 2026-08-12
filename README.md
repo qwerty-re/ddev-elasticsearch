@@ -14,7 +14,7 @@ This add-on integrates Elasticsearch into your [DDEV](https://ddev.com/) project
 ## Installation
 
 ```bash
-ddev add-on get ddev/ddev-elasticsearch
+ddev add-on get qwerty-re/ddev-elasticsearch
 ddev restart
 ```
 
@@ -49,7 +49,7 @@ docker volume rm ddev-$(ddev status -j | docker run -i --rm ddev/ddev-utilities 
 
 ## Usage
 
-To access the Elasticsearch container from within the web container, use the hostname `elasticsearch` and port `9200`. For example, the server URL might be `http://elasticsearch:9200`. Alternatively, you can use the `ddev.site` URLs to access it via HTTP or HTTPS: `http://<projectname>.ddev.site:9200` and `https://<projectname>.ddev.site:9201`. These URLs are also available from the host.
+To access the Elasticsearch container from within the web container, use the hostname `elasticsearch` and port `9200`. For example, the server URL might be `http://elasticsearch:9200`. Alternatively, you can use the `ddev.site` URLs to access it via HTTP or HTTPS: `http://elasticsearch.ddev.site` and `https://elasticsearch.ddev.site`. These URLs are also available from the host.
 
 > [!TIP]
 > What about Kibana support? Use this [add-on](https://github.com/JanoPL/ddev-kibana).
