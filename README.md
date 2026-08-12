@@ -1,7 +1,7 @@
 [![add-on registry](https://img.shields.io/badge/DDEV-Add--on_Registry-blue)](https://addons.ddev.com)
-[![tests](https://github.com/ddev/ddev-elasticsearch/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ddev/ddev-elasticsearch/actions/workflows/tests.yml?query=branch%3Amain)
-[![last commit](https://img.shields.io/github/last-commit/ddev/ddev-elasticsearch)](https://github.com/ddev/ddev-elasticsearch/commits)
-[![release](https://img.shields.io/github/v/release/ddev/ddev-elasticsearch)](https://github.com/ddev/ddev-elasticsearch/releases/latest)
+[![tests](https://github.com/qwerty-re/ddev-elasticsearch/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/qwerty-re/ddev-elasticsearch/actions/workflows/tests.yml?query=branch%3Amain)
+[![last commit](https://img.shields.io/github/last-commit/qwerty-re/ddev-elasticsearch)](https://github.com/qwerty-re/ddev-elasticsearch/commits)
+[![release](https://img.shields.io/github/v/release/qwerty-re/ddev-elasticsearch)](https://github.com/qwerty-re/ddev-elasticsearch/releases/latest)
 
 # DDEV Elasticsearch
 
@@ -24,7 +24,7 @@ After installation, make sure to commit the `.ddev` directory to version control
 ### Using Elasticsearch 7
 
 ```bash
-ddev add-on get ddev/ddev-elasticsearch
+ddev add-on get qwerty-re/ddev-elasticsearch
 cp .ddev/elasticsearch/docker-compose.elasticsearch7.yaml .ddev/
 ddev restart
 ```
@@ -32,7 +32,7 @@ ddev restart
 ### Using Elasticsearch 8
 
 ```bash
-ddev add-on get ddev/ddev-elasticsearch
+ddev add-on get qwerty-re/ddev-elasticsearch
 cp .ddev/elasticsearch/docker-compose.elasticsearch8.yaml .ddev/
 ddev restart
 ```
